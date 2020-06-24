@@ -35,8 +35,7 @@ export class TestExplorer implements TreeDataProvider<ITestItem>, Disposable {
                     title: 'Switch to Standard mode',
                 },
                 contextValue: 'UNTESTABLE_NODE',
-                tooltip: 'Switch the Java Language Server to Standard mode to show all the tests',
-                description: ' Switch the Java Language Server to Standard mode',
+                tooltip: 'Switch the Java Language Server to Standard mode to show all the test cases',
                 iconPath: new ThemeIcon('info'),
             };
         }
@@ -61,7 +60,7 @@ export class TestExplorer implements TreeDataProvider<ITestItem>, Disposable {
             return [
                 {
                     id: LIGHTWEIGHT_NODE_ID,
-                    displayName: 'Click to show the Test Explorer',
+                    displayName: 'Click to load test cases...',
                     fullName: LIGHTWEIGHT_NODE_ID,
                     kind: TestKind.None,
                     project: '',
